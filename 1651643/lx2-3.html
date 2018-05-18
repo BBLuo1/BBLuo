@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>WEB技术与应用</title>
+    <link href="Style.css" rel="stylesheet" type="text/css" /> 
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="navbar.css" rel="stylesheet" />
+    <link href="jumbotron-narrow.css" rel="stylesheet" />
+    <script src="jquery-3.0.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/canvas_clock.js"></script>
+    <script src="js/background.js"></script>
+</style>
+</head>   
+<body>
+    <div id="all">
+        <div id="title"  >
+            WEB技术与应用
+            <div id="user" ></div>
+            <div id="time">             
+	                <canvas id="clock1_" width="200px" height ="200px" style ="border-radius:50%;background-image: url(clock.jpg)"></canvas> 
+                       <script type="text/javascript">
+                          clockd1_ = {
+                             "indicate": true,
+                             "indicate_color": "#222",
+                             "dial1_color": "#666600",
+                             "dial2_color": "#81812e",
+                             "dial3_color": "#9d9d5c",
+                             "time_add": 1,
+                             "time_24h": true,
+                             "date_add": 3,
+                             "date_add_color": "#999",
+                         };
+                         var c = document.getElementById('clock1_');                       
+                         cns1_ = c.getContext('2d');
+                         clock_conti(200, cns1_, clockd1_);                      
+                </script>      
+            </div> 
+        </div>
+        <div id="body">
+          <nav class="navbar navbar-default">
+          <div class="container-fluid">   
+             <div id="Div1" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">主页<span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                          <li><a href="Homepage.html" target ="main">首页</a></li>
+                          <li><a href="Index.html" target="main">个人主页</a></li>              
+                     </ul>
+                 </li>
+                 <li><a href="课程介绍.html" target ="main">课程介绍</a></li>
+                 <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">学习园地<span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                          <li><a href="实验.html" target ="left">实验</a></li>  
+                          <li><a href="#">课程资料</a></li>                                     
+                     </ul>
+                 </li>                                     
+               </ul>
+               <ul class="nav navbar-nav navbar-right">               
+                  <li><a href="register.aspx" target="main">注册</a></li>
+                  <li><a href="../navbar-fixed-top/">联系我们</a></li>
+               </ul>
+             </div>
+            </div> 
+            </nav> 
+            <div id="left">
+                 <iframe  name ="left" width="100%"  height="100%"  margin="auto"  frameborder="no"></iframe>                                                                                   
+             </div>                       
+             <div id="right">
+                <iframe src="Homepage.html" name ="main" width="100%"  height="100%"  margin="auto "></iframe>
+            </div>
+        </div>
+        <div id="tail">Copyright</div>
+    </div>
+</body>            
+</html>
