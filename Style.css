@@ -167,3 +167,94 @@
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+#chat {
+    background-color :#decfd8
+    width :75%;
+    height :auto;
+
+}
+.online
+{
+    width:100%;
+    height:35px;
+    margin :5px;
+    text-align :center ;
+    line-height :35px;
+    vertical-align :middle ;
+    background-color :#7995a8;
+}
+.onlinename {
+    width:80%;
+    min-height :35px;
+    height :auto;
+    margin :auto;
+    padding :20px;
+    background-color :#768e91;
+
+}
+#chattitle {
+    width :100%;
+    height :45px;
+    font-family :楷体;
+    font-size :30px;
+    font-weight :bold ;
+    text-align :center ;
+    line-height :45px;
+    vertical-align :middle ;
+    background-color :#decfd8;
+}
+#chatshow {
+    width:72%;
+    height :600px;
+    margin :2px ;
+    float :left ;
+}
+#chatuser {
+    width:25%;
+    height :600px;
+    margin :2px ;
+    margin-right :5px;
+    float :right ;
+}
+#chatsend {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+.word {
+    width :auto ;
+    max-width :50%;
+    height :auto;
+    min-height :30px;
+    background-color :#0094ff;
+    float :left   ;
+    margin :2px;
+    padding :5px;
+    border-radius :5px;
+}
+.word-name {
+    width :auto;
+    min-width :10%;
+    height :30px;
+    margin :auto ;
+    float :left ;
+}
+.word-content {
+    width :70%;
+    height :auto;
+    min-height :30px;
+    float :left ;
+    margin :2px;
+
+}
+.marquee {
+    width:100%;
+    margin ：auto;
+    margin-top ：5px;
+    height :35px;
+    text-align :center ;
+    line-height :35px;
+    vertical-align :middle ;
+    marquee-style :slide ;
+}
