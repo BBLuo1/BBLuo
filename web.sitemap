@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="实验列表"  description="">
+      <siteMapNode url="" title="实验一"  description="" >
+            <siteMapNode url="lx1-1.aspx" title="lx1-1"  description="" />
+            <siteMapNode url="lx1-2.aspx" title="lx1-2"  description="" />
+            <siteMapNode url="lx1-3.html" title="lx1-3"  description="" />
+            <siteMapNode url="Index.html" title="Index"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="实验二"  description="" >
+          <siteMapNode url="lx2-2.aspx" title="lx2-2"  description="" />
+          <siteMapNode url="lx2-3.html" title="lx2-3"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="实验三"  description="" >
+          <siteMapNode url="lx3-1.aspx" title="乘法口诀表"  description="" />
+          <siteMapNode url="lx3-2.aspx" title="数字排序"  description="" />
+          <siteMapNode url="lx4-1.aspx" title="验证码"  description="" />
+          <siteMapNode url="lx4-2.aspx" title="连接排序字符串"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="实验四"  description="" >
+          <siteMapNode url="register.aspx" title="注册"  description="" />
+          <siteMapNode url="下拉日期.aspx" title="下拉日期"  description="" />
+          <siteMapNode url="upload.aspx" title="上传实验"  description="" />
+      </siteMapNode> 
+      <siteMapNode url="" title ="聊天室" description ="">
+        <siteMapNode url ="chatroom/chat.aspx" title ="聊天室" description =""/>
+      </siteMapNode>
+  </siteMapNode>
+</siteMap>

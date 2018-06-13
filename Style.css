@@ -184,6 +184,13 @@
     vertical-align :middle ;
     background-color :#7995a8;
 }
+ .online img 
+    {
+    width:35px;
+    height :35px;
+    border-radius :50%;
+    margin-left :5px;
+    }
 .onlinename {
     width:80%;
     min-height :35px;
@@ -191,8 +198,22 @@
     margin :auto;
     padding :20px;
     background-color :#768e91;
-
 }
+.onlinename-content {
+    width:100%;
+    height :35px;
+    line-height :35px;
+    vertical-align :middle ;
+    font-size :20px;
+}
+    .onlinename-content img 
+    {
+    width:35px;
+    height :35px;
+    border-radius :50%;
+    float :left;
+    margin-right :10px;
+    }
 #chattitle {
     width :100%;
     height :45px;
@@ -236,10 +257,17 @@
 .word-name {
     width :auto;
     min-width :10%;
-    height :30px;
+    height :35px;
     margin :auto ;
     float :left ;
+    line-height :35px;
+    vertical-align :middle ;
 }
+    .word-name img {
+    width:35px;
+    height:35px;
+    float :left;
+    }
 .word-content {
     width :70%;
     height :auto;
@@ -248,6 +276,7 @@
     margin :2px;
 
 }
+
 .marquee {
     width:100%;
     margin ：auto;

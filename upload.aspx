@@ -33,7 +33,7 @@
                     <br />
                     验证码：<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
                     <asp:Label ID="Label4" runat="server"></asp:Label>
-                    <asp:Button ID="Button3" runat="server" class="btn btn-default" Text="看不起，换一张" />
+                    <asp:Button ID="Button3" runat="server" class="btn btn-default" Text="看不清，换一张" />
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="必须输入验证码" ControlToValidate="TextBox3"></asp:RequiredFieldValidator>
                         <br />
                     <asp:Button ID="Button4" runat="server" Text="登陆" class="btn btn-success"/>

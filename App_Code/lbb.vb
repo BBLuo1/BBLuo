@@ -75,8 +75,7 @@ Public Class lbb
         Dim a, i, j As Integer
         Dim m As Integer
         Randomize()
-        a = Int(3 * Rnd() + 4)
-        For i = 0 To a
+        For i = 0 To 3
             Select Case Int(3 * Rnd() + 1)
                 Case 1                '0~9之间的数字 ASCII 范围为：48~57  
                     m = Int(10 * Rnd() + 48)
@@ -85,7 +84,6 @@ Public Class lbb
                 Case 3                'A~Z之间的字符 ASCII 范围为：65~90  
                     m = Int(26 * Rnd() + 65)
             End Select
-            i = i + 1
             randomkey = randomkey & Chr(m)
         Next
     End Function

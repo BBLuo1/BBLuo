@@ -7,7 +7,7 @@ Partial Class chatroom_chat
             Response.Redirect("login.aspx")
         End If
         lbluser.Text = ""
-        lbluser.Text = Session("user")
+        lbluser.Text = Session("user") & "<img src='../images/" & Session("img") & "'/>"
     End Sub
     Protected Sub btnloginout_Click(sender As Object, e As EventArgs) Handles btnloginout.Click
         Dim saystr As String
@@ -16,18 +16,23 @@ Partial Class chatroom_chat
         Application.Lock()
         Application("show") &= saystr
         Application("user_online") = CInt(Application("user_online")) - 1
-        Dim username() As String
-        ReDim username(10)
-        username = Split(Application("user_name"), ".")
+        Dim username(), img() As String
+        ReDim username(10), img(10)
+        username = Application("user_name")
+        img = Application("user_img")
+        Dim n = Application("user_online")
+        Dim j As Integer
         For i = 0 To Application("user_online")
             If username(i) = Session("user") Then
-                username(i) = ""
+                j = i
             End If
         Next
-        For Each ch In username
-            Application("user_name") = ch & "."
+        For i = j To n
+            username(i) = username(i + 1)
+            img(i) = img(i + 1)
         Next
         Application.UnLock()
         Response.Redirect("login.aspx")
     End Sub
+
 End Class

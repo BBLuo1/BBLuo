@@ -30,7 +30,7 @@
          <tr>
             <td>密码</td>
             <td>
-                <asp:TextBox ID="Textpassword" runat="server" Type="password"></asp:TextBox>
+                <asp:TextBox ID="Textpassword" runat="server" TextMode="password"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="请输入密码" ControlToValidate="Textpassword"></asp:RequiredFieldValidator>
              </td>
         </tr>
@@ -54,6 +54,8 @@
             <td>邮箱</td>
             <td>
                 <asp:TextBox ID="Textemail" runat="server"></asp:TextBox>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="邮箱地址有误" ControlToValidate="Textemail" ValidationExpression="^\w+([-+.]\w+)@\w+([-.]\w+).\w+([-.]\w+)*$ ">
+                </asp:RegularExpressionValidator>
             </td>
         </tr>
         <tr>
@@ -107,7 +109,6 @@
         
     </table>
             
-        <asp:Label ID="Label2" runat="server"></asp:Label>
             <br />
              验证码&nbsp;<asp:TextBox ID="Textbox1" runat="server"></asp:TextBox>
             <asp:Label ID="Label4" runat="server"></asp:Label> 
@@ -116,8 +117,12 @@
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button1" runat="server" class="btn btn-default" Text="提交" /> 
+            <asp:Button ID="Button2" runat="server"  class="btn btn-default" Text="重置" />
         <br />
         <asp:Label ID="Label1" runat="server" ></asp:Label>
+            <br />
+            
+        <asp:Label ID="Label2" runat="server"></asp:Label>
         <br />
         <asp:Button ID="Button4" runat="server"  class="btn btn-default" Text="代码" />
         <br />
@@ -126,7 +131,6 @@
     <div class="userimg" >
         上传头像<br>
             <asp:FileUpload ID="FileUpload1" runat="server" />
-            <asp:Button ID="Button2" runat="server"  class="btn btn-default" Text="上传" />
             <br />
             <asp:Image ID="Image1"   runat="server" width="70px" Height ="100px"/>
             <br />

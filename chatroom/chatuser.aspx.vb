@@ -6,14 +6,12 @@ Partial Class chatroom_cahtuser
         lblonline.Text = ""
         lblonline.Text = "(" & Application("user_online") & "人)"
         Label1.Text = ""
-        Dim username() As String
-        ReDim username(10)
-        username = Split(Application("user_name"), ".")
-        l.ssort(username)
-        For Each name In username
-            If name <> "" Then
-                Label1.Text &= name & "<br>"
-            End If
+        Dim n As Integer = Application("user_online") - 1
+        Dim username() As String = Application("user_name")
+        Dim img() As String = Application("user_img")
+        For i = 0 To n
+            Label1.Text &= "<div class='onlinename-content'>" & "<img src='../images/" & img(i) & "'/>" & username(i) & "</div>" & "<br>"
         Next
+        Response.AddHeader("refresh", "5")
     End Sub
 End Class

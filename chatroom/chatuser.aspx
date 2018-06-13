@@ -4,7 +4,6 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="refresh" content="1"/>
     <title></title>
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
     <link href="../Style.css" rel="stylesheet" />

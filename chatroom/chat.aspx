@@ -15,6 +15,8 @@
         <div id="chattitle">聊天室</div>
         <div id="chatshow">
             <iframe src="chatshow.aspx" name="show" width="100%" height="560px" border="none"></iframe>
+            <br />
+            <asp:Button ID="Button1" class="btn btn-success" runat="server" Text="清除聊天记录" />
         </div>
         <div id="chatuser">
             <div class ="online">用户名：
